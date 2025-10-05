@@ -77,6 +77,14 @@ app.post('/messages/save', async (req, res) => {
     })
   }
 })
+// a route to About Us
+app.get('/api/about', (req, res) => {
+  res.json({
+    name: "Tony Zhao",
+    bio: "Hi, I'm Tony Zhao — a Computer Science and Data Science major passionate about artificial intelligence and intelligent systems. I enjoy building full-stack web applications and exploring how data, algorithms, and large-scale models can make software smarter and more adaptive. My favorite part of programming is turning abstract ideas into functional, efficient systems. I plan to pursue a master's degree focused on AI and intelligent computing, where I can deepen my understanding of machine learning, neural architectures, and generative models. I'm excited by the rapid evolution of AI and aspire to contribute to research and development that advances how humans and intelligent systems interact.",
+    imageUrl: "http://localhost:7002/tony.jpg" 
+  })
+})
 
 // export the express app we created to make it available to other modules
 module.exports = app // CommonJS export style!

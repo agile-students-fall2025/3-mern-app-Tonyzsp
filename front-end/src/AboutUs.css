@@ -1,0 +1,29 @@
+.about-container {
+  max-width: 600px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.about-container img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.about-container h1 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.about-container p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.about-error {
+  color: red;
+  margin-top: 10px;
+}
